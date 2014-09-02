@@ -16,7 +16,7 @@ public class LuhnChecker {
 	
 
 	public LuhnChecker (String pathName){
-	LinkedList<String> serialList = readFile(Driver.pathName); //open up .txt file to be read
+	LinkedList<String> serialList = readFile(Driver.pathName); //open up and read .txt file in as linked list of strings
 	FileWriter output = null;//initialize output file writer
 	try {
 		output = new FileWriter(Driver.pathName.substring(0,Driver.nameLength-4) + "_failed.txt");//output file name
